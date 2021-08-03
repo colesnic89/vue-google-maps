@@ -71,7 +71,12 @@ export default (() => {
       googleMapScript.setAttribute('src', url)
       googleMapScript.setAttribute('async', '')
       googleMapScript.setAttribute('defer', '')
-      document.head.appendChild(googleMapScript)
+
+      if (typeof window.google === 'undefined') {
+        document.head.appendChild(googleMapScript)
+      } else {
+        window.vueGoogleMapsInit()
+      }
     } else {
       throw new Error('You already started the loading of google maps')
     }
