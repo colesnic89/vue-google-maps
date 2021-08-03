@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xkjyeah/vue-google-maps.git"
+    "url": "git+https://github.com/colesnic89/vue-google-maps.git"
   },
   "bugs": {
     "url": "https://github.com/xkjyeah/vue-google-maps/issues"
